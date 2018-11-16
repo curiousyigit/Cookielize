@@ -33,7 +33,7 @@ Then we want to define an alias in the same `config/app.php` file.
 ];
 ```
 
-**3. Publish Config File**
+**3. Publish Config File**  
 The config file allows you to override default settings of this package to meet your specific needs. It also allows you to change the supported languages list.
 
 To generate a config file type this command into your terminal:
@@ -43,7 +43,7 @@ php artisan vendor:publish --tag=cookielize
 This generates a config file at config/cookielize.php.
 
 ## Usage
-This package is very easy to use. Once installed, when a user visits the "trigger" url(which by default is www.yourwebsite.com/languages/en, <--where en is the language code.) the application locale for them is set.
+This package is very easy to use. Once installed, when a user visits the "trigger" url(which by default is www.yourwebsite.com/languages/en, <--where en is the language code.) the application locale for them is set if it is in the supported languages list.
 
 **A few examples:**  
 https://www.yourwebsite.com/languages/ar <-- Sets the locale to arabic  
@@ -54,10 +54,10 @@ https://www.yourwebsite.com/languages/fr <-- Sets the locale to french
 This function is used to generate trigger(locale changer) urls in your views. It uses the "trigger_path" to do so. Any changes to the "trigger_path" in the config file will automatically reflect.
 ```
 // Example 1
-{{Cookielize::LocaleRoute('en')}} // /languages/en
+{{Cookielize::LocaleRoute('en')}} //gives /languages/en
 
 // Example 2
-<a href="{{Cookielize::LocaleRoute('tr')}}">Turkish</a> // <a href="/languages/tr">Turkish</a>
+<a href="{{Cookielize::LocaleRoute('tr')}}">Turkish</a> //gives <a href="/languages/tr">Turkish</a>
 ``` 
 
 **2. LocaleSupported() - Checks if locale is supported, returns a boolean**  
