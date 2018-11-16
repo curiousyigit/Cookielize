@@ -38,7 +38,7 @@ The config file allows you to override default settings of this package to meet 
 
 To generate a config file type this command into your terminal:
 ```
-php artisan vendor:publish --tag=cookielize
+php artisan vendor:publish  --provider=hopefeda\Cookielize\CookielizeServiceProvider
 ```
 This generates a config file at config/cookielize.php.
 
