@@ -20,4 +20,14 @@ class Cookielize
             return false;
         }
     }
+
+    public function SupportedLocales()
+    {
+        return config('cookielize.supported_languages');
+    }
+
+    public function CurrentLocale()
+    {
+        return config('app.locale');
+    }
 }

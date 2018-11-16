@@ -69,6 +69,27 @@ This function is used to check if a locale is in the "supported_languages" list.
 @endif  
 
 ```
+
+**3. SupportedLocales() - Gets an array of supported locales**  
+This function is used to get a list of supported locales from the "supported_locales" in the `config/cookielize.php` file.
+```
+// Example
+@foreach(Cookielize::SupportedLocales() as $locale)
+	<a href="{{Cookielize::LocaleRoute($locale)}}">{{$locale}}</a>
+@endforeach
+
+// Gives
+<a href="/languages/en">en</a>
+<a href="/languages/ar">ar</a>
+```
+
+**4. CurrentLocale() - Gets the current set app locale**  
+This function is used to get the current app locale. It is the equivalent of `config('app.locale')`.
+```
+// Example
+{{Cookielize::CurrentLocale()}} //Gives en
+```  
+
 **Note:** If you want to use the Cookielize functions within your controllers, don't forget to add `use Cookielize;` at the beginning of your controller.
 ```
 // Example
