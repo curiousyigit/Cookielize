@@ -7,14 +7,13 @@ return [
     |
     | This is the path that will trigger the locale/language change. It should 
     | contain a "{locale}" parameter which will be replaced by the locale code 
-    | while linking. This path starts from the root of your application url
-    | (APP_URL in your .env file).
+    | while linking. This path starts from the root of your application url.
     |
     | Example 1: '/languages/{locale}'
-    | When linked: http://www.yourApplicationURL.com/languages/en
+    | When linked: http://www.yourwebsite.com/languages/en
     | 
     | Example 2: '/{locale}'
-    | When linked: https://www.yourApplicationURL.com/en
+    | When linked: https://www.yourwebsite.com/en
     |
     */
     'trigger_path' => '/languages/{locale}',
@@ -72,7 +71,6 @@ return [
     |
     */
     'unsupported_language_action' => '404',
-
 
 
 

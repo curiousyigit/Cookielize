@@ -1,8 +1,14 @@
 {
-    "name": "hopefeda/cookielize",
+    "name": "hopefeda/Cookielize",
     "description": "This package adds changing locale/language functionality to your laravel app using cookies",
     "type": "library",
+    "keywords": ["cookie", "locale", "localization", "cookielize", "language", "laravel"],
     "license": "MIT",
+    "homepage": "https://github.com/hopefeda/Cookielize",
+    "support": {
+        "issues": "https://github.com/hopefeda/Cookielize/issues",
+        "source": "https://github.com/hopefeda/Cookielize"
+    },
     "authors": [
         {
             "name": "Shoaib Feda",
@@ -10,10 +16,23 @@
         }
     ],
     "minimum-stability": "dev",
-    "require": {},
+    "require": {
+        "php": "^5.5.0",
+        "illuminate/support" : "^5.1"
+    },
     "autoload": {
         "psr-4": {
-            "hopefeda\\cookielize\\": "src/"
+            "hopefeda\\Cookielize\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "hopefeda\\Cookielize\\CookielizeServiceProvider"
+            ],
+            "aliases": {
+                "Cookielize": "hopefeda\\Cookielize\\CookielizeFacade"
+            }
         }
     }
 }

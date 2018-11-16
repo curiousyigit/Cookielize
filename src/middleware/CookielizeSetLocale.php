@@ -1,6 +1,6 @@
 <?php
 
-namespace hopefeda\cookielize;
+namespace hopefeda\Cookielize;
 
 use Closure;
 use Cookie;
