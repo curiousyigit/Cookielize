@@ -1,5 +1,5 @@
 {
-    "name": "hopefeda/Cookielize",
+    "name": "hopefeda/cookielize",
     "description": "This package adds changing locale/language functionality to your laravel app using cookies",
     "type": "library",
     "keywords": ["cookie", "locale", "localization", "cookielize", "language", "laravel"],
