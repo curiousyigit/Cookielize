@@ -9,7 +9,7 @@ Installation is straightforward, setup is similar to every other Laravel Package
 
 **1. Install via composer**
 ```
-composer require fedasoft/cookielize
+composer require fedasoft/Cookielize
 ```
 
 **2. Define the Service Provider and alias**  
@@ -183,3 +183,5 @@ You can configure various properties from the `config/cookielize.php` file.
 */
 'supported_languages' => ['en', 'ar'],
 ```
+## Contribute  
+I encourage you to contribute to this package to improve it and make it better. Even if you don't feel comfortable with coding or submitting a pull-request (PR), you can still support it by submitting issues with bugs or requesting new features, or simply helping discuss existing issues to give us your opinion and shape the progress of this package.
