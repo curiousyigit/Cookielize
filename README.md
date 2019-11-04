@@ -9,7 +9,7 @@ Installation is straightforward, setup is similar to every other Laravel Package
 
 **1. Install via composer**
 ```
-composer require fedasoft/cookielize
+composer require hopefeda/cookielize
 ```
 
 **2. Define the Service Provider and alias**  
