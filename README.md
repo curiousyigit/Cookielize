@@ -1,3 +1,6 @@
+# ABANDONED
+This project is abondened and no longer maintained.
+
 # Cookielize 
 This package adds changing locale/language functionality to your laravel app using cookies.
 
